@@ -1,0 +1,127 @@
+whoami - print effective user id
+
+man - man is the system's manual pager.  Each page argument given to  man  is  
+       normally  the  name of a program, utility or function.  The manual page  
+       associated with each of these arguments is then found and displayed.
+
+clear - clear the terminal screen 
+
+pwd - print name of current/working directory
+
+ls - List  information  about  the FILEs (the current directory by default).  
+       Sort entries alphabetically if none of -cftuvSUX nor --sort  is  specified
+	   a- all( do not ignore entries starting with .)
+	   C- sort by columns
+	   h- human readable form
+	   I- ignore=PATTERN (do not list implied entries matching shell PATTERN)
+	   l- use a long listing format 
+	   N- print entry names without quoting
+	   Q- enclose entry names in double quotes
+	   r- reverse order while sorting
+	   R- list sub directories recursively
+	   s- print the allocated size of each files in blocks,
+	   S- sort by file size (largest first)
+	   t- sort by modification time (newest first)
+	   U- do not sort list entries in directory order
+	   x- list entries by lines instead of columns
+	   X- sort alphabetically by entry extension
+	   Z- print any security content of each file 
+	   
+cd - used to change the directories
+
+mkdir - Create the DIRECTORY(ies), if they do not already exist.
+
+touch - create an empty file (Update  the  access  and modification times of each FILE to the current  time.)                                                                    
+rmdir - remove empty directories
+
+rm - rm removes each specified file.  By default, it does not remove directories.
+     -f :ignore nonexistent files and arguments, never prompt              
+     -i : prompt before every removal
+	 -r, -R,:recursive(remove directories and their contents recursively)
+	 -d : remove empty directories
+	 
+openvt - start a program on a new virtual terminal (VT). 
+       -s :Switch  to  the  new VT when starting the command. The VT of the new command will be made the new current VT;                      
+       -u :Figure out the owner of the current and run login as that user
+
+mv -
+
+cp
+
+head
+
+tail
+
+date
+
+cat
+
+less
+
+echo
+
+wc
+
+piping
+
+sort
+
+uniq
+
+diff
+
+find
+
+grep
+
+du
+
+df
+
+history
+
+ps
+
+top
+
+kill
+
+killall
+
+jobs, bg and fg
+
+gzip
+
+gunzip
+
+tar
+
+nano
+
+alias
+
+xargs
+
+ln
+
+who
+
+su
+
+sudo
+
+passwd
+
+chown
+
+chmod
+
+wget
+
+Understanding permissions
+
+Intro to options
+
+Redirecting standard output
+
+expansions
