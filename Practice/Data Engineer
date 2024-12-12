@@ -1,0 +1,161 @@
+Most Common 50 Linux Commands in Data Engineering!
+
+ls: List directory contents.
+
+ ls -lh /data/
+
+cd: Change directory.
+
+ cd /data/input/
+
+mkdir: Create directories.
+
+ mkdir /data/processed/
+
+rmdir: Remove empty directories.
+
+ rmdir /data/processed/old_dir/
+
+cp: Copy files or directories.
+
+ cp /data/input/file.csv /data/processed/
+
+mv: Move or rename files or directories.
+
+ mv /data/input/file.csv /data/processed/processed_file.csv
+
+rm: Remove files or directories.
+
+ rm /data/processed/old_file.csv
+
+find: Search for files in a directory hierarchy.
+
+ find /data/ -name "*.csv"
+
+grep: Search for patterns in files.
+
+ grep "ERROR" /var/log/app.log
+
+sed: Stream editor for filtering and transforming text.
+
+ sed 's/old/new/g' file.txt
+ 
+awk: Pattern scanning and processing language.
+  awk '{print $1, $2}' file.txt
+  
+cut: Remove sections from each line of files.
+  cut -d',' -f1,3 file.csv  
+  
+head: Output the first part of files.
+  head -n 10 file.txt 
+
+tail: Output the last part of files.
+  tail -n 20 file.txt
+  
+chmod: Change file modes or Access Control Lists.
+  chmod 755 script.sh 
+
+chown: Change file owner and group.
+  chown user:group file.txt  
+  
+df: Report file system disk space usage.
+  df -h  
+
+du: Estimate file space usage.
+  du -sh /data/
+
+tar: Archive files.
+  tar -czvf archive.tar.gz /data/  
+  
+gzip: Compress files.
+  gzip file.txt
+
+gunzip: Decompress files.
+  gunzip file.txt.gz 
+  
+zip: Package and compress files.
+  zip archive.zip file1 file2
+
+unzip: Extract compressed files.
+  unzip archive.zip 
+
+wget: Download files from the web.
+  wget http://example.com/file.zip
+
+curl: Transfer data from or to a server.
+  curl -O http://example.com/file.zip  
+  
+scp: Secure copy (remote file copy program).
+  scp file.txt user@remote_host:/remote/directory/ 
+
+rsync: Remote file and directory synchronization.
+  rsync -av /data/ user@remote_host:/remote/data/  
+  
+ssh: OpenSSH SSH client (remote login program).
+  ssh user@remote_host
+
+ps: Report a snapshot of current processes.
+  ps aux  
+  
+top: Display Linux tasks.
+  top
+
+kill: Send a signal to a process, usually to terminate it.
+  kill -9 1234
+
+killall: Kill processes by name.
+  killall process_name  
+  
+nohup: Run a command immune to hangups.
+  nohup ./script.sh &
+
+jobs: List active jobs.
+  jobs  
+  
+bg: Resume a suspended job in the background.
+  bg %1
+
+fg: Bring a job to the foreground.
+  fg %1  
+  
+alias: Create an alias for a command.
+  alias ll='ls -l'
+
+history: Show command history.
+  history  
+  
+chmod: Change file permissions.
+  chmod u+x script.sh
+ 
+chgrp: Change group ownership.
+  chgrp group_name file.txt  
+  
+file: Determine file type.
+  file file.txt
+
+diff: Compare files line by line.
+  diff file1.txt file2.txt  
+  
+cmp: Compare two files byte by byte.
+  cmp file1.txt file2.txt 
+
+sort: Sort lines of text files.
+  sort file.txt
+
+uniq: Report or omit repeated lines.
+  uniq file.txt 
+
+tee: Read from standard input and write to standard output and files.
+  echo "text" | tee file.txt  
+  
+xargs: Build and execute command lines from standard input.
+  echo "file1 file2" | xargs -n 1 rm  
+  
+date: Display or set the system date and time. 
+  date 
+
+crontab: Schedule periodic tasks.
+  crontab -e
+
+at: Schedule a command to run at a specified time.
+  echo "backup.sh" | at now + 1 hour  
